@@ -1,0 +1,35 @@
+Groups
+------
+
+nd_tools
+	--Provided automatically to items that use the nd_tools system. (Mallets don't count.)
+
+nd_tools_deny
+	--Any tool with this group will be excluded from the nd_tools system.
+
+nd_tools_glue
+	--Add this to an item's definition to make it usable by mallets.
+	--The exact value defines how many mallet uses will be provided before another item of glue is consumed.
+	--Also enables the item to be used to craft mallets.
+
+
+
+Regristration Functions
+-----------------------
+
+nd_tools.register_mallet(name, durability, efficiency, hand_matl, head_matl)
+	--A shortcut function to register new mallets, as well as their crafting recipes.
+	--To provide a texture, provide a file named "(your mod name)_mallet_(lowercase name).png", e.g. "nd_tools_mallet_wood.png"
+
+	--name: Provides the name and description of the item. 
+		--Should be provided as a description, e.g. "Wood"
+		--Will automatically be suffixed with " Mallet"
+		--The itemstring will also be automatically created. Will be prefixed with "(current_modname):", turned lowercase, and spaces replaced by underscores.
+
+	--durability: The amount of times this item can be used before breaking
+
+	--efficiency: An optional multiplier to the amount of times this item can be used per consumption of glue. Defaults to 1
+
+	--hand_matl, head_matl: Optional; When provided, will be used to automatically create a crafting recipe.
+		--Hand Material is used for the handle of the tool
+		--Head Material is used for the head of the tool
