@@ -16,16 +16,16 @@ An api.txt file is provided if you wish to work with this system or make new mal
 Dependencies and Support
 -------------------------------------------------------------------------------------------------------------
 Required mods:
-	node\_damage: https://content.minetest.net/packages/Noodlemire/node_damage/
-	controls: https://github.com/mt-mods/controls (This fork is necessary for updated support)
+* node\_damage: https://content.minetest.net/packages/Noodlemire/node_damage/
+* controls: https://github.com/mt-mods/controls (This fork is necessary for updated support)
 
 Optional mods:
-	cloud_items
-	default
-	ethereal
-	hardtrees
-	mesecons_materials
-	moreores
+* cloud_items
+* default
+* ethereal
+* hardtrees
+* mesecons_materials
+* moreores
 
 -------------------------------------------------------------------------------------------------------------
 License
